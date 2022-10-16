@@ -1,0 +1,279 @@
+{
+  "title": "order-a-coffee-complete",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 448,
+      "height": 768,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "https://coffee-cart.netlify.app/",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "https://coffee-cart.netlify.app/",
+          "title": "Coffee cart"
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Espresso"
+        ],
+        [
+          "[data-test=Espresso]"
+        ]
+      ],
+      "offsetY": 128.0280532836914,
+      "offsetX": 157.40187072753906
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Americano"
+        ],
+        [
+          "[data-test=Americano]"
+        ]
+      ],
+      "offsetY": 110.07492065429688,
+      "offsetX": 146.40187072753906
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Mocha"
+        ],
+        [
+          "[data-test=Mocha]"
+        ]
+      ],
+      "offsetY": 117.84835815429688,
+      "offsetX": 138.40187072753906,
+      "button": "secondary"
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Yes"
+        ],
+        [
+          "[data-cy=add-to-cart-modal] > form > button:nth-child(1)"
+        ]
+      ],
+      "offsetY": 19,
+      "offsetX": 28.4765625
+    },
+    {
+      "type": "doubleClick",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Flat White $18.00"
+        ],
+        [
+          "#app > div:nth-child(4) > ul > li:nth-child(5) > h4"
+        ]
+      ],
+      "offsetY": 5.734375,
+      "offsetX": 46
+    },
+    {
+      "type": "doubleClick",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/平白咖啡 $18.00"
+        ],
+        [
+          "#app > div:nth-child(4) > ul > li:nth-child(5) > h4"
+        ]
+      ],
+      "offsetX": 45,
+      "offsetY": 5.734375
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "frame": [],
+      "selectors": [
+        [
+          "aria/Flat White"
+        ],
+        [
+          "[data-test=Flat_White]"
+        ]
+      ],
+      "offsetX": 0,
+      "offsetY": 0,
+      "button": "secondary"
+    },
+    {
+      "type": "keyDown",
+      "key": "Escape"
+    },
+    {
+      "type": "hover",
+      "selectors": [
+        [
+          "aria/Proceed to checkout"
+        ],
+        [
+          "[data-test=checkout]"
+        ]
+      ],
+      "frame": [],
+      "target": "main"
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Add one Espresso"
+        ],
+        [
+          "#app > div:nth-child(4) > div.pay-container > ul > li:nth-child(2) > div.unit-controller > button:nth-child(1)"
+        ]
+      ],
+      "offsetY": 13.1875,
+      "offsetX": 8.15625
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Remove one Mocha"
+        ],
+        [
+          "#app > div:nth-child(4) > div.pay-container > ul > li:nth-child(3) > div.unit-controller > button:nth-child(2)"
+        ]
+      ],
+      "offsetY": 10.4921875,
+      "offsetX": 8
+    },
+    {
+      "type": "waitForElement",
+      "target": "main",
+      "frame": [],
+      "selectors": [
+        [
+          "div.pay-container li"
+        ]
+      ],
+      "operator": "==",
+      "count": 2
+    },
+    {
+      "type": "waitForExpression",
+      "expression": "document.querySelector('div.pay-container li:nth-child(2) span.unit-desc').innerText === ' x 2'"
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Proceed to checkout"
+        ],
+        [
+          "[data-test=checkout]"
+        ]
+      ],
+      "offsetY": 19.796875,
+      "offsetX": 136.1875
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Name"
+        ],
+        [
+          "#name"
+        ]
+      ],
+      "offsetY": 13.90625,
+      "offsetX": 72.21875
+    },
+    {
+      "type": "change",
+      "value": "jec",
+      "selectors": [
+        [
+          "aria/Name"
+        ],
+        [
+          "#name"
+        ]
+      ],
+      "target": "main"
+    },
+    {
+      "type": "keyDown",
+      "target": "main",
+      "key": "Tab"
+    },
+    {
+      "type": "keyUp",
+      "key": "Tab",
+      "target": "main"
+    },
+    {
+      "type": "change",
+      "value": "jec@doe.com",
+      "selectors": [
+        [
+          "aria/Email"
+        ],
+        [
+          "#email"
+        ]
+      ],
+      "target": "main"
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Promotion message"
+        ],
+        [
+          "#promotion-label"
+        ]
+      ],
+      "offsetY": 16.515625,
+      "offsetX": 120.203125
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Submit"
+        ],
+        [
+          "#submit-payment"
+        ]
+      ],
+      "offsetY": 26.125,
+      "offsetX": 53.15625
+    }
+  ]
+}
