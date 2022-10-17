@@ -15,7 +15,7 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
-        "wdio-pptr": "wdio run ./wdio-pptr.conf.js"
+        "wdio-pptr": "wdio run wdio-pptr.conf.js"
     },
     "dependencies": {
         "devtools": "^7.25.0"
