@@ -6,7 +6,7 @@ const port = '';
 
 await axios
   .post(`${baseUrl}:${port}/session/${sessionId}/window/rect`, 
-    { x: null, y: null, width: 900, height: 841 })
+    { x: null, y: null, width: 600, height: 841 })
   .then(response => {});
 
 
@@ -14,7 +14,7 @@ await axios
 
 // await axios
 //   .post(`${baseUrl}:${port}/session/${sessionId}/element`, 
-//     { using: "css selector", value: "[data-test='Cappuccino'" })
+//     { using: "css selector", value: "[data-test='Cappuccino']" })
 //   .then(response => {
 //     elementId = Object.values(response.data.value)[0];
 //     console.log(elementId);
