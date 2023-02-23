@@ -6,20 +6,20 @@ const port = '';
 
 await axios
   .post(`${baseUrl}:${port}/session/${sessionId}/window/rect`, 
-    { x: null, y: null, width: 600, height: 841 })
+    { x: 0, y: 0, width: 600, height: 841 })
   .then(response => {});
 
 
-// let elementId = '';
+let elementId = '';
 
-// await axios
-//   .post(`${baseUrl}:${port}/session/${sessionId}/element`, 
-//     { using: "css selector", value: "[data-test='Cappuccino']" })
-//   .then(response => {
-//     elementId = Object.values(response.data.value)[0];
-//     console.log(elementId);
-//   });
+await axios
+  .post(`${baseUrl}:${port}/session/${sessionId}/element`, 
+    { using: "css selector", value: "[data-test='Cappuccino']" })
+  .then(response => {
+    elementId = Object.values(response.data.value)[0];
+    console.log(elementId);
+  });
 
-// await axios
-//   .post(`${baseUrl}:${port}/session/${sessionId}/element/${elementId}/click`, {})
-//   .then(response => {});
+await axios
+  .post(`${baseUrl}:${port}/session/${sessionId}/element/${elementId}/click`, {})
+  .then(response => {console.log(response.status)});
