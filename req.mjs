@@ -10,16 +10,16 @@ await axios
   .then(response => {});
 
 
-let elementId = '';
+// let elementId = '';
 
-await axios
-  .post(`${baseUrl}:${port}/session/${sessionId}/element`, 
-    { using: "css selector", value: "[data-test='Cappuccino']" })
-  .then(response => {
-    elementId = Object.values(response.data.value)[0];
-    console.log(elementId);
-  });
+// await axios
+//   .post(`${baseUrl}:${port}/session/${sessionId}/element`, 
+//     { using: "css selector", value: "[data-test='Cappuccino']" })
+//   .then(response => {
+//     elementId = Object.values(response.data.value)[0];
+//     console.log(elementId);
+//   });
 
-await axios
-  .post(`${baseUrl}:${port}/session/${sessionId}/element/${elementId}/click`, {})
-  .then(response => {console.log(response.status)});
+// await axios
+//   .post(`${baseUrl}:${port}/session/${sessionId}/element/${elementId}/click`, {})
+//   .then(response => {console.log(response.status)});
