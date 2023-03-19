@@ -17,7 +17,8 @@
         "webdriverio": "^8.6.3"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js",
+        "wdio": "wdio run wdio.conf.js --spec ./test/specs/order-a-coffee-simple-wdio.js",
+        "wdio-bidi": "wdio run wdio.conf.js --spec ./test/specs/order-a-coffee-bidi.js",
         "wdio-pptr": "wdio run wdio-pptr.conf.js",
         "req": "node req.mjs"
     },
