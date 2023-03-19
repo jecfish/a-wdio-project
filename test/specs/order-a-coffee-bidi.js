@@ -11,7 +11,7 @@ describe("order-a-coffee-simple", () => {
     browser.on('message', (data) => {
       const {params} = JSON.parse(data);
       if (params?.level != 'error') return;
-      console.log('RECEIVED: ', params?.text);
+      console.log('RECEIVED: %s', params?.text);
     });
 
     await browser.setWindowSize(600, 1041)
