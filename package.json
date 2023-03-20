@@ -11,6 +11,7 @@
         "@wdio/spec-reporter": "^8.4.0",
         "chromedriver": "^111.0.0",
         "devtools": "^8.6.2",
+        "geckodriver": "^3.2.0",
         "wdio-chromedriver-service": "^8.1.1",
         "wdio-geckodriver-service": "^4.1.0",
         "wdio-safaridriver-service": "^2.1.0",
